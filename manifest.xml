@@ -1,7 +1,0 @@
-<package>
-	<description brief="xde-simple-controller">
-		Orocos component to control robot
-	</description>
-	<author>Sovannara HAK/sovannara.hak@isir.upmc.fr</author>
-
-</package>
