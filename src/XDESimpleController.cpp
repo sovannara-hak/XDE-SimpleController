@@ -73,8 +73,10 @@ void XDE_SimpleController::updateHook(){
 	}
 
 	Eigen::VectorXd tau = dynModel->getGravityTerms();
+	Eigen::VectorXd tau2(7);
+    for(int i=0; i<7; i++) tau2[i] = tau[i+6];
 
-    out_tau.write(tau);
+    out_tau.write(tau2);
 }
 
 
